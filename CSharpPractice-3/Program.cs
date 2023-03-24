@@ -1,4 +1,7 @@
-﻿namespace MyProject;
+﻿using System.Collections.Generic;
+using System.Globalization;
+
+namespace MyProject;
 class Program
 {
     public static string Replace(string str, char first, char last)
@@ -16,11 +19,23 @@ class Program
             return newWord;
         }
     }
+
+    public static String AddFrontAndBack(string str, char last)
+    {
+        string newWord = str;
+        newWord = newWord.Insert(0, last.ToString());
+        newWord = newWord.Insert(newWord.Length, last.ToString());
+        return newWord;
+    }
+
     static void Main(string[] args)
     {
         string word = "Practice";
         int len = word.Length;
-       string newWord =  Replace("Practice", word[len-1], word[0]);
-        Console.Write(newWord);
+        /* string newWord =  Replace(word, word[len-1], word[0]);
+          Console.Write(newWord);*/
+
+        string NewWord = AddFrontAndBack(word, word[len - 1]);
+        Console.Write(NewWord);
     }
 }
