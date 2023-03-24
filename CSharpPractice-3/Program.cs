@@ -28,9 +28,32 @@ class Program
         return newWord;
     }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     static String checkForOk(string str)
     {
-        string newWord = "i";
+        string newWord = "";
 
         
         for (int i=0; i < str.Length-1; i++){
@@ -42,8 +65,6 @@ class Program
             newWord = newWord + str[i];
         }
         newWord += str[str.Length - 1];
-        newWord = newWord.Remove(0, 1);
-
 
         return newWord;
     }
@@ -51,7 +72,7 @@ class Program
 
     static void Main(string[] args)
     {
-        string word = "Practiokce";
+        string word = "Praokctiookkceko";
         int len = word.Length;
         /* string newWord =  Replace(word, word[len-1], word[0]);
           Console.Write(newWord);*/
@@ -59,6 +80,10 @@ class Program
         /*string NewWord = AddFrontAndBack(word, word[len - 1]);
         Console.Write(NewWord);*/
         string newWordOK = checkForOk(word);
+        while (newWordOK.Contains("ok"))
+        {
+            newWordOK = checkForOk(newWordOK);
+        }
         Console.WriteLine(newWordOK);
     }
 }
