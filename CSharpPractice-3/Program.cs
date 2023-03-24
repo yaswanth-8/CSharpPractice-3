@@ -28,14 +28,37 @@ class Program
         return newWord;
     }
 
+    static String checkForOk(string str)
+    {
+        string newWord = "i";
+
+        
+        for (int i=0; i < str.Length-1; i++){
+            if (str[i] == 'o' && str[i+1]=='k' )
+            {
+                i++;
+                continue;
+            }
+            newWord = newWord + str[i];
+        }
+        newWord += str[str.Length - 1];
+        newWord = newWord.Remove(0, 1);
+
+
+        return newWord;
+    }
+
+
     static void Main(string[] args)
     {
-        string word = "Practice";
+        string word = "Practiokce";
         int len = word.Length;
         /* string newWord =  Replace(word, word[len-1], word[0]);
           Console.Write(newWord);*/
 
-        string NewWord = AddFrontAndBack(word, word[len - 1]);
-        Console.Write(NewWord);
+        /*string NewWord = AddFrontAndBack(word, word[len - 1]);
+        Console.Write(NewWord);*/
+        string newWordOK = checkForOk(word);
+        Console.WriteLine(newWordOK);
     }
 }
