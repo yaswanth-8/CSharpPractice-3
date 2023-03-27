@@ -14,7 +14,10 @@ namespace CSharpPractice_3
             //Inheritance inheritance = new Inheritance();
           // Car car = new Audi();
            //car.wheels();
-           overloading oloading = new overloading();
+           //overloading oloading = new overloading();
+           Marks marks = new Marks();
+            marks.science = 88;
+           Student agg = new Student(marks);
         }
     }
 }
