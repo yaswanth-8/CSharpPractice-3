@@ -12,7 +12,7 @@ namespace CSharpPractice_3
         public static void Main(string[] args)
         {
             //Inheritance inheritance = new Inheritance();
-            var classLevel = new Inheritance.ClassLevel2.ClassLevel3();
+           Car car = new Car();
         }
     }
 }
