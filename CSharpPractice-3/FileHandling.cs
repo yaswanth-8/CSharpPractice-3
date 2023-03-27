@@ -10,16 +10,9 @@ namespace CSharpPractice_3
     {
         public FileHandling()
         {
-            FileStream file = new FileStream("D:\\C#\\CSharpPractice-3\\CSharpPractice-3\\file1.txt", FileMode.OpenOrCreate);
-            StreamWriter pen = new StreamWriter(file);
-            pen.Write("Written from file writer");
-            pen.Close();
-            file = new FileStream("D:\\C#\\CSharpPractice-3\\CSharpPractice-3\\file1.txt", FileMode.Open);
-            StreamReader sr = new StreamReader(file);
-            string line = sr.ReadLine();
-            Console.WriteLine(line);
-            sr.Close();
-            file.Close();
+            const string path = "D:\\C#\\CSharpPractice-3\\CSharpPractice-3\\fileInfo.txt";
+            FileInfo fi = new FileInfo(path);
+            fi.Create();
         }
     }
 }
