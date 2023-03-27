@@ -70,7 +70,7 @@ class Program
     }
 
 
-    static void Main(string[] args)
+    static void collections(string[] args)  //MAIN ***************************************************************8
     {
         string word = "Praokctiookkceko";
         int len = word.Length;
