@@ -10,8 +10,22 @@ namespace CSharpPractice_3
     {
         public Car() {
             Console.WriteLine("Inside Car");
-        }    
-
+        }
+        public void wheels()
+        {
+            Console.WriteLine("normal wheels");
+        }
+    }
+    class Audi:Car {
+        public Audi()
+        {
+            Console.WriteLine("Audi");
+        }
+        public void wheels()
+        {
+            Console.WriteLine("attached alloys");
+        }
 
     }
+
 }
