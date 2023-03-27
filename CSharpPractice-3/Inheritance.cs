@@ -11,7 +11,7 @@ namespace CSharpPractice_3
         public Car() {
             Console.WriteLine("Inside Car");
         }
-        public void wheels()
+        public virtual void wheels()
         {
             Console.WriteLine("normal wheels");
         }
@@ -21,7 +21,7 @@ namespace CSharpPractice_3
         {
             Console.WriteLine("Audi");
         }
-        public void wheels()
+        public override void wheels()
         {
             Console.WriteLine("attached alloys");
         }

@@ -10,9 +10,9 @@ namespace CSharpPractice_3
     {
         string name;
         private Marks mark;
-        public Student(Marks mark)
+        public Student(Marks Mark)
         {
-            this.mark = mark;
+            this.mark = Mark;
             Console.WriteLine(mark.science);
         }
     }
