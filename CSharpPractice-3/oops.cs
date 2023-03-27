@@ -12,12 +12,14 @@ namespace CSharpPractice_3
         public static void Main(string[] args)
         {
             //Inheritance inheritance = new Inheritance();
-           Car car = new Audi();
-           car.wheels();
+           //Car car = new Audi();
+           //car.wheels();
            //overloading oloading = new overloading();
           // Marks marks = new Marks();
           //  marks.science = 88;
           // Student agg = new Student(marks);
+          Derived abs = new Derived();
+            abs.method("yaswanth");
         }
     }
 }
