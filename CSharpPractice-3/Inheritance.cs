@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CSharpPractice_3
 {
-    internal class Car
+    class Car
     {
         public Car() {
             Console.WriteLine("Inside Car");

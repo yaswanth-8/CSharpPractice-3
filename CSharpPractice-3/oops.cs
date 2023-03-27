@@ -12,8 +12,9 @@ namespace CSharpPractice_3
         public static void Main(string[] args)
         {
             //Inheritance inheritance = new Inheritance();
-           Car car = new Audi();
-           car.wheels();
+          // Car car = new Audi();
+           //car.wheels();
+           overloading oloading = new overloading();
         }
     }
 }
