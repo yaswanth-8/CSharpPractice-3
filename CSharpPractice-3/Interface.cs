@@ -14,6 +14,7 @@ namespace CSharpPractice_3
     }
 
     class derivedClass : IParent {
+
        }
     
 

@@ -20,8 +20,9 @@ namespace CSharpPractice_3
           // Student agg = new Student(marks);
          // Derived abs = new Derived();
             //abs.method("yaswanth");
-            derivedClass dc = new derivedClass();
-            ((IParent)dc).show();
+            //derivedClass dc = new derivedClass();
+            //((IParent)dc).show();
+            FileHandling fh = new FileHandling();
         }
     }
 }
