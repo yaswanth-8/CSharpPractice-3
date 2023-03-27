@@ -21,7 +21,7 @@ namespace CSharpPractice_3
          // Derived abs = new Derived();
             //abs.method("yaswanth");
             derivedClass dc = new derivedClass();
-            dc.show();
+            ((IParent)dc).show();
         }
     }
 }
